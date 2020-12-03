@@ -1,0 +1,91 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    background-color: #0085f2;
+}
+#container{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+/* 首页 */
+.font-page{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    transition: all 1s ease-out;
+    background-color: #0085f2;
+}
+.font-page .avator{
+    width: 50%;
+}
+.font-page .avator img{
+    width: 100%;
+    border-radius: 50%;
+}
+.font-page h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: bisque;
+    margin: 2vh 0;
+}
+.font-page h4{
+    color: bisque;
+}
+.font-page .envelope{
+    width: 75%;
+}
+.font-page .envelope img{
+    width: 100%;
+    transition: all 2s ease-out;
+    animation: envelope 3s infinite;
+}
+@keyframes envelope {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+/* 内容页 */
+.letter{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    padding: 5vw;
+}
+.letter-content{
+    width: 100%;
+    height: 100%;
+    background: url('../img/letter-paper.png') no-repeat 85% 60%;
+    padding: 5vw;
+}
+.page{
+    width: 100%;
+    margin: 3vw 0;
+}
+.sign{
+    float: right;
+    margin-top: 5%;
+    color: bisque;
+}
