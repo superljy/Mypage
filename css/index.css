@@ -57,7 +57,7 @@ html,body{
         transform: scale(1);
     }
     50%{
-        transform: scale(1.2);
+        transform: scale(1.1);
     }
     100%{
         transform: scale(1);
@@ -79,13 +79,39 @@ html,body{
     height: 100%;
     background: url('../img/letter-paper.png') no-repeat 85% 60%;
     padding: 5vw;
+    position: relative;
 }
-.page{
+.page1,.page2{
     width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10vw 5vw;
+    transition: all 1s ease-out;
+}
+.page1{
+    opacity: 1;
+}
+.page1 p{
     margin: 3vw 0;
 }
+.page1 .next{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5vw;
+}
+.page1 .next img{
+    width: 35%;
+    transition: all 2s ease-out;
+    animation: envelope 3s infinite;
+}
+.page2{
+    opacity: 0;
+}
 .sign{
+    font-size: 18px;
     float: right;
     margin-top: 5%;
-    color: bisque;
 }
